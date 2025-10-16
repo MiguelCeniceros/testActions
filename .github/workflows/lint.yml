@@ -22,4 +22,5 @@ jobs:
       - name: .NET Lint
         uses: zyactions/dotnet-lint@v1
         with:
+          workspace: myConsoleApp/myConsoleApp.sln
           implicit-restore: true
