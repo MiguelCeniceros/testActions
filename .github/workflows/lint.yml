@@ -19,7 +19,7 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: Install dotnet-lint
-        run: dotnet tool install --global dotnet-lint
-      - name: Run dotnet-lint
-        run: dotnet-lint --path .
+      - name: .NET Lint
+        uses: zyactions/dotnet-lint@v1
+        with:
+          implicit-restore: true
