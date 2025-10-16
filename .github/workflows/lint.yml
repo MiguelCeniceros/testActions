@@ -24,3 +24,10 @@ jobs:
         with:
           workspace: myConsoleApp/myConsoleApp.sln
           implicit-restore: true
+
+      - name: Deploy DocFX to GitHub Pages
+        uses: sator-imaging/docfx-pages@v1.8.3
+        with:
+          app_name: 'docfx-pages'
+          site_title: 'My Project Docs'
+          site_footer: '© 2025 Miguel Ceniceros'
