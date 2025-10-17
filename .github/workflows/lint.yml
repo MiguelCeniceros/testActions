@@ -37,10 +37,11 @@ jobs:
 
       - name: Validate HALCON Version
         run: |
-          $content = Get-Content -Path (Get-ChildItem -Recurse -Filter *.csproj).FullName
+          $csprojPath = Get-ChildItem -Recurse -Filter *.csproj | Select-Object -First 1
+          $content = Get-Content -Path $csprojPath.FullName -Raw
           if ($content -notmatch '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"') {
-            Write-Error "Unexpected Halcon version!"
-            exit 1
+              Write-Error "Unexpected Halcon version!"
+              exit 1
           }
 
       - name: Deploy DocFX to GitHub Pages
