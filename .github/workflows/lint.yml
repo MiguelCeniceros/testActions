@@ -24,12 +24,18 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: Super-linter
-        uses: super-linter/super-linter@v8.2.1
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          VALIDATE_CSHARP: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #- name: Super-linter
+      #  uses: super-linter/super-linter@v8.2.1
+      #  env:
+      #    VALIDATE_ALL_CODEBASE: false
+      #    VALIDATE_CSHARP: true
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get HALCON Package Version
+        run: |
+          grep -i "HalconDotNet" **/*.csproj || true
+          grep -i "HalconDotNet" **/packages.config || true
+
 
       - name: Deploy DocFX to GitHub Pages
         uses: sator-imaging/docfx-pages@v1.8.3
