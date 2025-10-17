@@ -35,13 +35,13 @@ jobs:
       #  run: |
       #    grep -i "HalconDotNet" **/*.csproj || true
 
-      - name: Validate Halcon version
+      - name: Validate HALCON Version
         run: |
-          grep -q '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"' **/*.csproj || {
-          echo "Unexpected HALCON version!" >&2
-          exit 1
+          $content = Get-Content -Path (Get-ChildItem -Recurse -Filter *.csproj).FullName
+          if ($content -notmatch '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"') {
+            Write-Error "Unexpected Halcon version!"
+            exit 1
           }
-
 
       - name: Deploy DocFX to GitHub Pages
         uses: sator-imaging/docfx-pages@v1.8.3
