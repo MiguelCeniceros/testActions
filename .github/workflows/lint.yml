@@ -24,11 +24,10 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: .NET Lint
-        uses: zyactions/dotnet-lint@v1
-        with:
-          workspace: myConsoleApp/myConsoleApp.sln
-          implicit-restore: true
+      - name: Super-linter
+        uses: super-linter/super-linter@v8.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy DocFX to GitHub Pages
         uses: sator-imaging/docfx-pages@v1.8.3
