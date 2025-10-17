@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout code
@@ -31,10 +31,16 @@ jobs:
       #    VALIDATE_CSHARP: true
       #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get HALCON Package Version
+      #- name: Get HALCON version
+      #  run: |
+      #    grep -i "HalconDotNet" **/*.csproj || true
+
+      - name: Validate Halcon version
         run: |
-          grep -i "HalconDotNet" **/*.csproj || true
-          grep -i "HalconDotNet" **/packages.config || true
+          grep -q '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"' **/*.csproj || {
+          echo "Unexpected HALCON version!" >&2
+          exit 1
+          }
 
 
       - name: Deploy DocFX to GitHub Pages
