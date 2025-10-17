@@ -27,6 +27,12 @@ public class Another
         // do something
         MyInt = 10;
     }
+
+    public int GetNumber(int i)
+    {
+        return MyInt * 100;
+    }
+
 }
 
 

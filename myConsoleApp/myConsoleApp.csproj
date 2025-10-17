@@ -12,4 +12,8 @@
 		<WarningsAsErrors>1591</WarningsAsErrors> <!-- Treat missing docs as errors -->
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0" />
+	</ItemGroup>
+
 </Project>
