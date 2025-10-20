@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: myMain
+  commentId: N:myMain
+  id: myMain
+  children:
+  - myMain.Another
+  - myMain.Hi
+  - myMain.myMainClass
+  langs:
+  - csharp
+  - vb
+  name: myMain
+  nameWithType: myMain
+  fullName: myMain
+  type: Namespace
+  assemblies:
+  - myMain
+references:
+- uid: myMain.Hi
+  commentId: T:myMain.Hi
+  href: myMain.Hi.html
+  name: Hi
+  nameWithType: Hi
+  fullName: myMain.Hi
+- uid: myMain.myMainClass
+  commentId: T:myMain.myMainClass
+  href: myMain.myMainClass.html
+  name: myMainClass
+  nameWithType: myMainClass
+  fullName: myMain.myMainClass
+- uid: myMain.Another
+  commentId: T:myMain.Another
+  href: myMain.Another.html
+  name: Another
+  nameWithType: Another
+  fullName: myMain.Another

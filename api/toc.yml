@@ -1,0 +1,16 @@
+### YamlMime:TableOfContent
+items:
+- uid: myMain
+  name: myMain
+  type: Namespace
+  items:
+  - uid: myMain.Another
+    name: Another
+    type: Class
+  - uid: myMain.Hi
+    name: Hi
+    type: Class
+  - uid: myMain.myMainClass
+    name: myMainClass
+    type: Class
+memberLayout: SamePage

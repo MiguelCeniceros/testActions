@@ -1,0 +1,13 @@
+{
+  "myMain": "myMain.yml",
+  "myMain.Another": "myMain.Another.yml",
+  "myMain.Another.DoSomething": "myMain.Another.yml",
+  "myMain.Another.GetNumber(System.Int32)": "myMain.Another.yml",
+  "myMain.Another.MyInt": "myMain.Another.yml",
+  "myMain.Hi": "myMain.Hi.yml",
+  "myMain.Hi.#ctor": "myMain.Hi.yml",
+  "myMain.Hi.DoSomething(System.String)": "myMain.Hi.yml",
+  "myMain.Hi.Hello(System.String,System.String)": "myMain.Hi.yml",
+  "myMain.myMainClass": "myMain.myMainClass.yml",
+  "myMain.myMainClass.Main(System.String[])": "myMain.myMainClass.yml"
+}

@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: myMain.Hi
+  commentId: T:myMain.Hi
+  id: Hi
+  parent: myMain
+  children:
+  - myMain.Hi.#ctor
+  - myMain.Hi.DoSomething(System.String)
+  - myMain.Hi.Hello(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Hi
+  nameWithType: Hi
+  fullName: myMain.Hi
+  type: Class
+  source:
+    remote:
+      path: myMain/OtherClass.cs
+      branch: main
+      repo: https://github.com/MiguelCeniceros/testActions.git
+    id: Hi
+    path: myMain/OtherClass.cs
+    startLine: 4
+  assemblies:
+  - myMain
+  namespace: myMain
+  syntax:
+    content: public class Hi
+    content.vb: Public Class Hi
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: myMain.Hi.#ctor
+  commentId: M:myMain.Hi.#ctor
+  id: '#ctor'
+  parent: myMain.Hi
+  langs:
+  - csharp
+  - vb
+  name: Hi()
+  nameWithType: Hi.Hi()
+  fullName: myMain.Hi.Hi()
+  type: Constructor
+  source:
+    remote:
+      path: myMain/OtherClass.cs
+      branch: main
+      repo: https://github.com/MiguelCeniceros/testActions.git
+    id: .ctor
+    path: myMain/OtherClass.cs
+    startLine: 6
+  assemblies:
+  - myMain
+  namespace: myMain
+  syntax:
+    content: public Hi()
+    content.vb: Public Sub New()
+  overload: myMain.Hi.#ctor*
+  nameWithType.vb: Hi.New()
+  fullName.vb: myMain.Hi.New()
+  name.vb: New()
+- uid: myMain.Hi.DoSomething(System.String)
+  commentId: M:myMain.Hi.DoSomething(System.String)
+  id: DoSomething(System.String)
+  parent: myMain.Hi
+  langs:
+  - csharp
+  - vb
+  name: DoSomething(string)
+  nameWithType: Hi.DoSomething(string)
+  fullName: myMain.Hi.DoSomething(string)
+  type: Method
+  source:
+    remote:
+      path: myMain/OtherClass.cs
+      branch: main
+      repo: https://github.com/MiguelCeniceros/testActions.git
+    id: DoSomething
+    path: myMain/OtherClass.cs
+    startLine: 16
+  assemblies:
+  - myMain
+  namespace: myMain
+  syntax:
+    content: public void DoSomething(string s)
+    parameters:
+    - id: s
+      type: System.String
+    content.vb: Public Sub DoSomething(s As String)
+  overload: myMain.Hi.DoSomething*
+  nameWithType.vb: Hi.DoSomething(String)
+  fullName.vb: myMain.Hi.DoSomething(String)
+  name.vb: DoSomething(String)
+- uid: myMain.Hi.Hello(System.String,System.String)
+  commentId: M:myMain.Hi.Hello(System.String,System.String)
+  id: Hello(System.String,System.String)
+  parent: myMain.Hi
+  langs:
+  - csharp
+  - vb
+  name: Hello(string, string)
+  nameWithType: Hi.Hello(string, string)
+  fullName: myMain.Hi.Hello(string, string)
+  type: Method
+  source:
+    remote:
+      path: myMain/OtherClass.cs
+      branch: main
+      repo: https://github.com/MiguelCeniceros/testActions.git
+    id: Hello
+    path: myMain/OtherClass.cs
+    startLine: 25
+  assemblies:
+  - myMain
+  namespace: myMain
+  syntax:
+    content: public void Hello(string a, string b)
+    parameters:
+    - id: a
+      type: System.String
+    - id: b
+      type: System.String
+    content.vb: Public Sub Hello(a As String, b As String)
+  overload: myMain.Hi.Hello*
+  nameWithType.vb: Hi.Hello(String, String)
+  fullName.vb: myMain.Hi.Hello(String, String)
+  name.vb: Hello(String, String)
+references:
+- uid: myMain
+  commentId: N:myMain
+  href: myMain.html
+  name: myMain
+  nameWithType: myMain
+  fullName: myMain
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: myMain.Hi.#ctor*
+  commentId: Overload:myMain.Hi.#ctor
+  href: myMain.Hi.html#myMain_Hi__ctor
+  name: Hi
+  nameWithType: Hi.Hi
+  fullName: myMain.Hi.Hi
+  nameWithType.vb: Hi.New
+  fullName.vb: myMain.Hi.New
+  name.vb: New
+- uid: myMain.Hi.DoSomething*
+  commentId: Overload:myMain.Hi.DoSomething
+  href: myMain.Hi.html#myMain_Hi_DoSomething_System_String_
+  name: DoSomething
+  nameWithType: Hi.DoSomething
+  fullName: myMain.Hi.DoSomething
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: myMain.Hi.Hello*
+  commentId: Overload:myMain.Hi.Hello
+  href: myMain.Hi.html#myMain_Hi_Hello_System_String_System_String_
+  name: Hello
+  nameWithType: Hi.Hello
+  fullName: myMain.Hi.Hello
