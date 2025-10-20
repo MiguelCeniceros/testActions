@@ -43,10 +43,22 @@ jobs:
               Write-Error "Unexpected Halcon version!"
               exit 1
           }
+      
+      - name: Install DocFX
+        run: |
+          Invoke-WebRequest -Uri "https://github.com/dotnet/docfx/releases/latest/download/docfx.zip" -OutFile "docfx.zip"
+          Expand-Archive -Path "docfx.zip" -DestinationPath "docfx"
+          $env:Path += ";$PWD\docfx"
+          echo "DocFX installed"
 
-      - name: Deploy DocFX to GitHub Pages
-        uses: sator-imaging/docfx-pages@v1.8.3
+      - name: restore dependencies
+        run: dotnet restore
+  
+      - name: Build DocFX documentation
+        run: docfx\docfx.exe docfx.json
+        
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          app_name: 'docfx-pages'
-          site_title: 'My Project Docs'
-          site_footer: '© 2025 Miguel Ceniceros'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
