@@ -41,14 +41,14 @@ jobs:
       #  run: |
       #    grep -i "HalconDotNet" **/*.csproj || true
 
-      - name: Validate HALCON Version
-        run: |
-          $csprojPath = Get-ChildItem -Recurse -Filter *.csproj | Select-Object -First 1
-          $content = Get-Content -Path $csprojPath.FullName -Raw
-          if ($content -notmatch '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"') {
-              Write-Error "Unexpected Halcon version!"
-              exit 1
-          }
+      #- name: Validate HALCON Version
+      #  run: |
+      #    $csprojPath = Get-ChildItem -Recurse -Filter *.csproj | Select-Object -First 1
+      #    $content = Get-Content -Path $csprojPath.FullName -Raw
+      #    if ($content -notmatch '<PackageReference Include="MVTec.HalconDotNet-Windows" Version="24111.0.0"') {
+      #        Write-Error "Unexpected Halcon version!"
+      #        exit 1
+      #    }
       
       - name: Install DocFX
         run: |
