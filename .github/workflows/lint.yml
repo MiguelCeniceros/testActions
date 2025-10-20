@@ -51,8 +51,8 @@ jobs:
           $env:Path += ";$PWD\docfx"
           echo "DocFX installed"
 
-      - name: restore dependencies
-        run: dotnet restore
+      #- name: restore dependencies
+      #  run: dotnet restore
   
       - name: Build DocFX documentation
         run: docfx\docfx.exe docfx.json
