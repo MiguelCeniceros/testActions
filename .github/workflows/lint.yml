@@ -16,6 +16,10 @@ jobs:
     runs-on: windows-2022
 
     steps:
+      - name: current dir
+        run: Get-ChildItem -Recurse
+        shell: pwsh
+    
       - name: Checkout code
         uses: actions/checkout@v3
 
