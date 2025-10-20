@@ -46,7 +46,7 @@ jobs:
       
       - name: Install DocFX
         run: |
-          Invoke-WebRequest -Uri "https://github.com/dotnet/docfx/releases/latest/download/docfx.zip" -OutFile "docfx.zip"
+          Invoke-WebRequest -Uri "https://github.com/dotnet/docfx/releases/download/v2.78.3/docfx-win-x64-v2.78.3.zip" -OutFile "docfx.zip"
           Expand-Archive -Path "docfx.zip" -DestinationPath "docfx"
           $env:Path += ";$PWD\docfx"
           echo "DocFX installed"
