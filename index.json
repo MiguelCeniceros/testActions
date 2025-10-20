@@ -3,5 +3,40 @@
     "href": "README.html",
     "title": "testActions | myMainProject",
     "summary": "testActions"
+  },
+  "api/myMain.Another.html": {
+    "href": "api/myMain.Another.html",
+    "title": "Class Another | myMainProject",
+    "summary": "Class Another Namespace myMain Assembly myMain.dll This class represents a public class which should be documented. public class Another Inheritance object Another Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties MyInt Represents the value of the integer. public int MyInt { get; set; } Property Value int Methods DoSomething() This method represents an action within the class. Should be documented too. public void DoSomething() GetNumber(int) public int GetNumber(int i) Parameters i int Returns int"
+  },
+  "api/myMain.Hi.html": {
+    "href": "api/myMain.Hi.html",
+    "title": "Class Hi | myMainProject",
+    "summary": "Class Hi Namespace myMain Assembly myMain.dll public class Hi Inheritance object Hi Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Hi() public Hi() Methods DoSomething(string) public void DoSomething(string s) Parameters s string Hello(string, string) public void Hello(string a, string b) Parameters a string b string"
+  },
+  "api/myMain.html": {
+    "href": "api/myMain.html",
+    "title": "Namespace myMain | myMainProject",
+    "summary": "Namespace myMain Classes Another This class represents a public class which should be documented. Hi myMainClass"
+  },
+  "api/myMain.myMainClass.html": {
+    "href": "api/myMain.myMainClass.html",
+    "title": "Class myMainClass | myMainProject",
+    "summary": "Class myMainClass Namespace myMain Assembly myMain.dll public class myMainClass Inheritance object myMainClass Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Main(string[]) public static void Main(string[] args) Parameters args string[]"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | myMainProject",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | myMainProject",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | myMainProject",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
   }
 }
