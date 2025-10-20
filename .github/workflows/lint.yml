@@ -16,8 +16,14 @@ jobs:
     runs-on: windows-2022
 
     steps:
+      
+    
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: current dir
+        run: Get-ChildItem -Recurse
+        shell: pwsh
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
